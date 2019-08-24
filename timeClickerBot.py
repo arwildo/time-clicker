@@ -6,7 +6,7 @@ mouse = Controller()
 
 # function that will be execute
 def download():
-    mouse.position = (873, 307)
+    mouse.position = (759, 211)
     mouse.press(Button.left)
     mouse.release(Button.left)
 
