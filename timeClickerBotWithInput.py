@@ -13,10 +13,11 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('test 80901')
-    keyboard.press(enter)
-    keyboard.release(enter)
+    keyboard.type('ls')
 
+    # keyboard key press after input
+    keyboard.press(Key.enter)
+    keyboard.release(Key.enter)
 
 
 # #the time configuration
