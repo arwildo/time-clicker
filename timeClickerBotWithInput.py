@@ -13,21 +13,20 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('ls')
+    keyboard.type('sudo apt-get update')
 
     # keyboard key press after input
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
 
 
-# #the time configuration
-# x = datetime.today()
-# y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
-# delta_t = y-x
-# secs = delta_t.seconds+1
+#the time configuration
+x = datetime.today()
+y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
+delta_t = y-x
+secs = delta_t.seconds+1
 
 
-# # the trigger/count down
-# t = Timer(secs, runScript)
-# t.start()
-runScript()
+# the trigger/count down
+t = Timer(secs, runScript)
+t.start()
