@@ -14,7 +14,7 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('apt install poppler-utils binwalk python-pip python3-pip tshark gdb man python-dev libssl-dev libffi-dev build-essential default-jre wpscan sqlmap grabber wapiti skipfish python-pyinotify python-yaml arachni -y')
+    keyboard.type('apt install poppler-utils binwalk binutils python-pip python3-pip tshark gdb man python-dev libssl-dev libffi-dev build-essential default-jre wpscan sqlmap grabber hashcat wapiti skipfish python-pyinotify python-yaml arachni radare2 aircrack-ng nmap wfuzz john hydra -y')
 
     # keyboard key press after input
     keyboard.press(Key.enter)
