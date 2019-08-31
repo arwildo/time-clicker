@@ -5,20 +5,33 @@ from pynput.mouse import Button, Controller
 
 mouse = Controller()
 
+# get mouse position
+def getMp():
+	print('===========')
+	print('timeClicker')
+	print('===========')
+	print('1. Set your mouse position, drag your mouse and hit enter when you done.')
+	input('Enter...')
+	mp = format(mouse.position)
+	print('position = '+ mp)
+	return mp
+
+mp = getMp()
+print(mp)
 # function that will be execute
-def download():
-    mouse.position = (759, 211)
-    mouse.press(Button.left)
-    mouse.release(Button.left)
+# def download():
+# 	mouse.position = (mp)
+# 	mouse.press(Button.left)
+# 	mouse.release(Button.left)
+
+# #the time configuration
+# x = datetime.today()
+# y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
+# delta_t = y-x
+# secs = delta_t.seconds+1
 
 
-#the time configuration
-x = datetime.today()
-y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
-delta_t = y-x
-secs = delta_t.seconds+1
-
-
-# the trigger/count down
-t = Timer(secs, download)
-t.start()
+# # the trigger/count down
+# t = Timer(secs, download)
+# t.start()
+# download()

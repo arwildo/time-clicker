@@ -14,7 +14,7 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('apt install poppler-utils binwalk binutils python-pip python3-pip tshark gdb man python-dev libssl-dev libffi-dev build-essential default-jre wpscan sqlmap grabber hashcat wapiti skipfish python-pyinotify python-yaml arachni radare2 aircrack-ng nmap wfuzz john hydra -y')
+    keyboard.type('apt update && apt upgrade && apt dist-upgrade && apt install tree -y')
 
     # keyboard key press after input
     keyboard.press(Key.enter)
@@ -23,7 +23,7 @@ def runScript():
 
 #the time configuration
 x = datetime.today()
-y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
+y = x.replace(day=x.day+1, hour=2, minute=1, second=0, microsecond=0)
 delta_t = y-x
 secs = delta_t.seconds+1
 
