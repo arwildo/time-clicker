@@ -14,7 +14,7 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('apt update && apt upgrade && apt dist-upgrade && apt install tree -y')
+    keyboard.type('apt update -y && apt upgrade -y && apt dist-upgrade -y && apt install tesseract-ocr && pip install pytesseract scrapy -y')
 
     # keyboard key press after input
     keyboard.press(Key.enter)
