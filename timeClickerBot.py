@@ -17,7 +17,6 @@ def getMp():
 	return mp
 
 mp = getMp()
-print(mp)
 # function that will be execute
 # def download():
 # 	mouse.position = (mp)
