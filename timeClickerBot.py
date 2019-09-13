@@ -16,7 +16,6 @@ def getMp():
 	print('position = '+ mp)
 	return mp
 
-mp = getMp()
 # function that will be execute
 # def download():
 # 	mouse.position = (mp)
