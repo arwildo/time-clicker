@@ -17,19 +17,21 @@ def getMp():
 	return mp
 
 # function that will be execute
-# def download():
-# 	mouse.position = (mp)
-# 	mouse.press(Button.left)
-# 	mouse.release(Button.left)
+def download():
+	mouse.position = (mp)
+	mouse.press(Button.left)
+	mouse.release(Button.left)
 
-# #the time configuration
-# x = datetime.today()
-# y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
-# delta_t = y-x
-# secs = delta_t.seconds+1
+download()
+
+##the time configuration
+#x = datetime.today()
+#y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
+#delta_t = y-x
+#secs = delta_t.seconds+1
 
 
-# # the trigger/count down
-# t = Timer(secs, download)
-# t.start()
-# download()
+## the trigger/count down
+#t = Timer(secs, download)
+#t.start()
+#download()
