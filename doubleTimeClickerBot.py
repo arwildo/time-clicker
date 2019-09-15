@@ -33,4 +33,3 @@ secs = delta_t.seconds+1
 # the trigger/count down
 t = Timer(secs, download)
 t.start()
-download()
