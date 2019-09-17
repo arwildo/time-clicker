@@ -14,6 +14,7 @@ def getMp():
 	input('Enter...')
 	mp = format(mouse.position)
 	print('position = '+ mp)
+	print('Mouse will be clicking that coordinate at the given setting time...')
 	return mp
 
 # function that will be execute
@@ -22,16 +23,15 @@ def download():
     mouse.press(Button.left)
     mouse.release(Button.left)
 
+
+#the time configuration
+x = datetime.today()
+y = x.replace(day=x.day+0, hour=0, minute=1, second=0, microsecond=0)
+delta_t = y-x
+secs = delta_t.seconds+1
+
+
+# the trigger/count down
 getMp()
-download()
-##the time configuration
-#x = datetime.today()
-#y = x.replace(day=x.day+1, hour=2, minute=9, second=0, microsecond=0)
-#delta_t = y-x
-#secs = delta_t.seconds+1
-#
-#
-## the trigger/count down
-#t = Timer(secs, download)
-#t.start()
-#download()
+t = Timer(secs, download)
+t.start()
