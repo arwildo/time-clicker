@@ -14,7 +14,7 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('apt update -y && apt upgrade -y && apt dist-upgrade -y && apt update -y && apt install seclists -y')
+    keyboard.type('apt update -y && apt upgrade -y && apt dist-upgrade -y && apt update -y && wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz')
 
     # keyboard key press after input
     keyboard.press(Key.enter)
