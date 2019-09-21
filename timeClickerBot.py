@@ -25,8 +25,8 @@ def download():
 
 
 #the time configuration
-x = datetime.today()#NOTE: still need to configure time
-y = x.replace(day=x.day+0, hour=0, minute=1, second=0, microsecond=0)
+x = datetime.today()
+y = x.replace(day=x.day+1, hour=2, minute=1, second=0, microsecond=0)
 delta_t = y-x
 secs = delta_t.seconds+1
 
