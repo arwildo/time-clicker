@@ -6,21 +6,21 @@ from pynput.mouse import Button, Controller
 mouse = Controller()
 
 # get mouse position
-mp = 0
 def getMp():
     print('===========')
     print('timeClicker')
     print('===========')
     print('1. Set your mouse position, drag your mouse and hit enter when you done.')
     input('Enter...')
+    global mp
     mp = format(mouse.position)
     print('position = '+ mp)
     print('Mouse will be clicking that coordinate at the given setting time...')
-    global mp #TODO: need to find way passing variabel
 
 # function that will be execute
 def download():
-    mouse.position = mp
+    newMp = mp
+    mouse.position = newMp
     mouse.press(Button.left)
     mouse.release(Button.left)
 
