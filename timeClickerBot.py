@@ -19,8 +19,7 @@ def getMp():
 
 # function that will be execute
 def download():
-    newMp = mp
-    mouse.position = newMp
+    mouse.position = mp
     mouse.press(Button.left)
     mouse.release(Button.left)
 
