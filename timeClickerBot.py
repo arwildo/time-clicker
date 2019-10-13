@@ -9,7 +9,7 @@ keyboard = ck()
 
 # function that will be execute
 def runScript():
-    mouse.position = (422, 323) 
+    mouse.position = (278, 176) 
     mouse.press(Button.left)
     mouse.release(Button.left)
 
