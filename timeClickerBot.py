@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/bin/python3
 from datetime import datetime
 from threading import Timer
 from pynput.mouse import Button, Controller
