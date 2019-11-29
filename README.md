@@ -7,7 +7,7 @@ Bot to click something at a specific time. It's quite useful for some tasks such
 
 
 ## Preview
-
+![alt text](img/preview.png "Preview")
 
 
 ## Built With
