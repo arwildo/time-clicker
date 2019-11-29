@@ -12,8 +12,8 @@ Bot to click something at a specific time. It's quite useful for some tasks such
 
 ## Built With
 
-* [Python3] (https://github.com/python/cpython)
-* [PyInput] (https://github.com/moses-palmer/pynput)
+* [Python3](https://github.com/python/cpython)
+* [PyInput](https://github.com/moses-palmer/pynput)
 
 
 ## Support
