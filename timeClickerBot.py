@@ -14,7 +14,7 @@ def runScript():
     mouse.release(Button.left)
 
 
-#the time configuration
+# the time configuration, in this case the next day by 2:01 AM
 x = datetime.today()
 y = x.replace(day=x.day+1, hour=2, minute=1, second=0, microsecond=0)
 delta_t = y-x

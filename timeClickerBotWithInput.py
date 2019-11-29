@@ -14,14 +14,14 @@ def runScript():
     mouse.release(Button.left)
 
     # keyboard input here
-    keyboard.type('apt update -y && apt upgrade -y && apt dist-upgrade -y && apt update -y && wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz')
+    keyboard.type('apt get update && pip install keras')
 
-    # keyboard key press after input
+    # keyboard key press enter the after input
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
 
 
-#the time configuration
+# the time configuration, in this case the next day by 2:01 AM
 x = datetime.today()
 y = x.replace(day=x.day+1, hour=2, minute=15, second=0, microsecond=0)
 delta_t = y-x
