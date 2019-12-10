@@ -13,7 +13,7 @@ keyboard = ck()
 # mouse position can get using mousepos tool
 
 def clicker():
-    mouse.position = (422, 323)
+    mouse.position = (420, 224)
     mouse.press(Button.left)
     mouse.release(Button.left)
 
@@ -30,20 +30,14 @@ def typer(KEYBOARD_INPUT):
 
 if __name__ == "__main__":
     KEYBOARD_INPUT = "apt get update && pip install keras"
-
-    x = datetime.today()
+    
+    t0 = datetime.today()
     # the time configuration, in this case the next day by 2:01 AM
-    y = x.replace(day=x.day+0, hour=14, minute=44, second=1, microsecond=0)
-    delta_t = y-x
-    secs = delta_t.seconds+1
+    t1 = t0.replace(day=t0.day+0, hour=15, minute=12, second=0, microsecond=0)
+    delta_t = t1 - t0
+    # secs will be the seconds reminder till 2:01 AM
+    secs = delta_t.seconds
 
-    print(x)
-    print(y)
-    print(delta_t)
-    print(secs)
-    
-    
     # the trigger/count down
     t = Timer(secs, clicker)
     t.start()
-
