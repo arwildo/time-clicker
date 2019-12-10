@@ -8,7 +8,9 @@ from pynput.keyboard import Key, Controller as ck
 mouse = Controller()
 keyboard = ck()
 
+
 # functions that will be execute
+# mouse position can get using mousepos tool
 
 def clicker():
     mouse.position = (422, 323)
