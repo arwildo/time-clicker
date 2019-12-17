@@ -7,21 +7,21 @@ mouse = Controller()
 
 # get mouse position
 def getMp():
-    print('===========')
-    print('timeClicker')
-    print('===========')
-    print('1. Set your mouse position, drag your mouse and hit enter when you done.')
-    input('Enter...')
-    global mp
-    mp = format(mouse.position)
-    print('position = '+ mp)
-    print('Mouse will be clicking that coordinate at the given setting time...')
+  print('===========')
+  print('timeClicker')
+  print('===========')
+  print('1. Set your mouse position, drag your mouse and hit enter when you done.')
+  input('Enter...')
+  global mp
+  mp = format(mouse.position)
+  print('position = '+ mp)
+  print('Mouse will be clicking that coordinate at the given setting time...')
 
 # function that will be execute
 def download():
-    mouse.position = mp
-    mouse.press(Button.left)
-    mouse.release(Button.left)
+  mouse.position = mp
+  mouse.press(Button.left)
+  mouse.release(Button.left)
 
 
 ##the time configuration
