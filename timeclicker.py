@@ -24,7 +24,6 @@ def typer(KEYBOARD_INPUT):
     keyboard.type(KEYBOARD_INPUT)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
-    exit()
 
 
 if __name__ == "__main__":
